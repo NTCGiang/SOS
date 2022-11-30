@@ -9,6 +9,7 @@
     tools:context=".IdentifyActivity">
 
     <ImageView
+        android:onClick="BackToWelcome"
         android:src="@drawable/ic_twotone_arrow_back_24"
         android:layout_width="40dp"
         android:layout_height="40dp"/>
@@ -73,11 +74,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
+            android:onClick="txtDangNhap"
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:text=" Đăng nhập"
             android:textSize="22sp"
-            android:textColor="#85848A"
+            android:textColor="@color/btn"
             android:layout_marginBottom="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

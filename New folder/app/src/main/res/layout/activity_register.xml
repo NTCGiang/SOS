@@ -9,9 +9,10 @@
     tools:context=".RegisterActivity">
 
     <ImageView
-        android:src="@drawable/back"
-        android:layout_width="50dp"
-        android:layout_height="50dp"/>
+        android:onClick="BackToWelcome"
+        android:src="@drawable/ic_twotone_arrow_back_24"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
     <TextView
         android:layout_marginTop="70dp"
         android:text="Đăng ký tài khoản"
@@ -28,7 +29,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         android:text="Email"
         android:textSize="22sp"
         android:textColor="#3F3D56"
@@ -60,7 +61,7 @@
     <Button
         android:id="@+id/btn_Register"
         android:onClick="register"
-        android:text="Đăng nhập"
+        android:text="Đăng Ký"
         android:backgroundTint="#e15004"
         android:layout_gravity="center"
         android:textColor="#ffffff"
@@ -69,8 +70,6 @@
         android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
-
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -85,15 +84,17 @@
             android:layout_marginBottom="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
         <TextView
-            android:layout_marginTop="30dp"
-            android:layout_gravity="center"
-            android:text=" Đăng nhập"
-            android:textSize="22sp"
-            android:textColor="#85848A"
-            android:layout_marginBottom="30dp"
+            android:onClick="txtDangNhap"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text=" Đăng nhập"
+            android:textColor="@color/btn"
+            android:textSize="22sp" />
 
     </LinearLayout>
 

@@ -9,11 +9,12 @@
     tools:context=".LoginActivity">
 
     <ImageView
+        android:onClick="BackToWelcome"
         android:src="@drawable/ic_twotone_arrow_back_24"
         android:layout_width="40dp"
         android:layout_height="40dp"/>
     <TextView
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:text="Đăng nhập"
         android:textSize="32sp"
         android:layout_width="wrap_content"
@@ -105,14 +106,34 @@
             android:layout_height="25dp"/>
     </LinearLayout>
 
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:text="Chưa có tài khoản ? Đăng ký"
-        android:textSize="22sp"
-        android:textColor="#85848A"
-        android:layout_marginBottom="30dp"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="Đã có tài khoản ?"
+            android:textSize="22sp"
+            android:textColor="#85848A"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:onClick="txtDangKy"
+            android:id="@+id/txt_Dangky"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text=" Đăng ký"
+            android:textSize="22sp"
+            android:textColor="@color/btn"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
