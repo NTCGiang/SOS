@@ -9,7 +9,7 @@ import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final long SPLASH_TIMER = 3000;
+    private static final long SPLASH_TIMER = 4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
